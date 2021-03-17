@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 body
 {
@@ -16,6 +16,7 @@ nav ul
 {
     display: flex;
     list-style-type: none;
+    font-size: 1em;
 }
 
 nav a 
@@ -41,4 +42,278 @@ nav a:hover
 #inscription:hover
 {
     border: none;
+}
+
+h1
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h1 + p
+{
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    bottom: 11px;
+}
+
+label
+{
+    font-size: 1.10em;
+    padding: 17px 18px;
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    left: 4px;
+    top: 1px;
+}
+
+.barre_de_recherche
+{
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 16px 0px 16px 10px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.barre_de_recherche:focus
+{
+    outline: none;
+}
+
+.bouton_rechercher
+{
+    font-size: 1.05em;
+    font-weight: bold;
+    color: white;
+    padding: 17px 24px;
+    background-color: #0065FC;
+    position: relative;
+    right: 4px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.div_filtres
+{
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 40PX;
+}
+
+.h2_filtres
+{
+    margin: 0 40px 0px 0;
+    font-weight: bold;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+}
+
+.txt_logo_filtres
+{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    font-weight: bold;
+    border: 2px solid #d9d9d9;
+    border-radius: 50px;
+}
+
+.eco:hover
+{
+    background-color: #DEEBFF;
+    border: none;
+    width: 185.78px;
+    height: 55px;
+    position: relative;
+    left: 2px;
+}
+
+
+.fam:hover
+{
+    background-color: #DEEBFF;
+    border: none;
+    width: 148.03px;
+    height: 55px;
+    position: relative;
+    left: 2px;
+}
+
+.rom:hover
+{
+    background-color: #DEEBFF;
+    border: none;
+    width: 183.22px;
+    height: 55px;
+    position: relative;
+    left: 2px;
+}
+
+.ani:hover
+{
+    background-color: #DEEBFF;
+    border: none;
+    width: 233.22px;
+    height: 55px;
+    position: relative;
+    left: 2px;
+}
+
+.logo_filtres
+{
+    font-size: 1.10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+.txt_filtres
+{
+    margin-left: 12px;
+    margin-right: 18px;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    color: #0065FC;
+    font-size: 1.10em;
+}
+
+.p_i_info
+{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.logo_info
+{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px #d9d9d9;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 1em;
+    position: relative;
+    bottom: 1px;
+}
+
+.fa-info
+{
+    color: #0065FC;
+}
+
+.hebergements_populaires
+{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.hebergements
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements_container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    height: 700px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.hebergements_articles
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    max-height: 197px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hebergements_figures
+{
+   
+}
+
+.hebergements_img
+{
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    position: relative;
+    bottom: 16px;
+    border-radius: 16px 16px 0 0;
+}
+
+.hebergements_fc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.hebergements_fc h3
+{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+    width: 200px;
+}
+
+.hebergements_fc p
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    margin-top: 3px;
+    position: relative;
+    bottom: 10px;
+}
+
+.stars 
+{
+    display: flex;
+    color: #0065FC;
+    margin-top: 8px;
+    position: relative;
+    bottom: 10px;
+    font-size: 0.9em;
 }
