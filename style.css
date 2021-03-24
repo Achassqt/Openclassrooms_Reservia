@@ -8,8 +8,14 @@ body
 
 #bloc_page
 {
-    width: 1390px;
+    max-width: 1390px;
     margin: auto;
+    padding: 0 30px;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 header
@@ -21,7 +27,7 @@ header
 
 #logo
 {
-
+    
 }
 
 nav ul 
@@ -35,7 +41,7 @@ nav a
 {
     text-decoration: none;
     color: black;
-    padding: 40px 40px;
+    padding: 40px;
 }
 
 nav a:hover
@@ -49,11 +55,59 @@ nav a:hover
 #inscription
 {
     color: #0065FC;
+    font-weight: bold;
+    padding-right: 0;
 }
 
 #inscription:hover
 {
     border: none;
+}
+
+.nav_barre
+{
+    display: flex;
+}
+
+@media all and (max-width: 620px)
+{
+    nav 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    ul 
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #logo 
+    {
+        position: absolute;
+    }
+
+    nav a
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav a:hover
+    {
+        border-bottom: solid 2px #0065FC;
+    }
+
+    nav a:hover
+    {
+        border: none;
+    }
+
 }
 
 h1
@@ -116,7 +170,8 @@ label
 {
     display: flex;
     margin-top: 35px;
-    margin-bottom: 40PX;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .h2_filtres
@@ -133,6 +188,7 @@ label
     display: flex;
     align-items: center;
     margin-right: 32px;
+    margin-bottom: 16px;
     font-weight: bold;
     border: 2px solid #d9d9d9;
     border-radius: 50px;
@@ -276,8 +332,8 @@ label
 
 .hebergements_articles
 {
-    max-width: 250px;
-    max-height: 197px;
+    max-width: 28%;
+    max-height: 100%;
     padding: 5px 5px 10px 5px;
     background-color: white;
     border-radius: 20px;
@@ -297,7 +353,9 @@ label
 
 .hebergements_img
 {
-    width: 250px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     height: 120px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
@@ -311,10 +369,7 @@ label
     margin-left: 10px;
 }
 
-a
-{
-    text-decoration: none;
-}
+
 
 .hebergements_fc h3
 {
@@ -396,7 +451,7 @@ a
 
 .populaires_articles
 {
-    width: 340px;
+    width: 80%;
     height: 136px;
     background-color: white;
     padding: 5px;
@@ -422,13 +477,15 @@ a
     height: 136px;
     object-fit: cover;
     border-radius: 16px 0 0 16px;
+    position: absolute;
 }
 
 .populaires_fc
 {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: 150px;
 }
 
 .populaires_fc h3
@@ -438,7 +495,7 @@ a
     font-weight: bold;
     margin: 0;
     margin-top: 10px;
-    width: 180px;
+    width: 90%;
 }
 
 .populaires_fc p
@@ -462,6 +519,52 @@ a
 .stars_2 .vide
 {
     color: #d9d9d9;
+}
+
+@media all and (max-width: 1422px)
+{
+    .hebergements_populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populaires
+    {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 22px;
+        margin-bottom: 30px;
+    }
+
+    .populaires_container
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .populaires_articles
+    {
+        width: 30%;
+    }
+
+    .titre_populaires
+    {
+        margin-bottom: 40px;
+    }
+    
+    .hebergements
+    {
+        width: 100%;
+        height: 600px;
+    }
+
+    .titre_hebergements
+    {
+        margin-bottom: 33px;
+    }
 }
 
 .activites
@@ -667,6 +770,7 @@ a
     height: 210px;
     margin-top: 50px;
     background-color: #F2F2F2;
+    padding: 0 30px;
 }
 
 .colonnes_container
@@ -680,7 +784,7 @@ a
 {
     display: flex;
     flex-direction: column;
-    width: 475px;
+    margin-right: 278px;
 }
 
 .colonnes_footer h3
@@ -701,7 +805,6 @@ a
 {
     color: black;
     font-size: 1em;
-    
     margin-bottom: 13px;
 }
 
@@ -709,3 +812,4 @@ a
 {
     text-decoration: underline black;
 }
+
