@@ -14,48 +14,53 @@
                 <div id="logo">
                     <img src="images/logo/Reservia.svg" alt="logo Reservia"/>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                    </ul>
+                <div class="container_nav_p">
+                    <nav>
+                        <ul>
+                            <li><a href="#hebergements">Hébergements</a></li>
+                            <li><a href="#activites">Activités</a></li>
+                        </ul>
+                    </nav>
                     <p><a href="#" id="inscription">S'inscrire</a></p>
-                </nav>
+                </div>
             </header>
-
+        
             <section>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form method="post" action="traitement.php">
                     <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
-                    <input class="barre_de_recherche" type="search" name="recherche" id="recherche" placeholder="Marseille, France" />
+                    <input class="barre_de_recherche" type="search" name="recherche" id="recherche" placeholder="Marseille, France" size="5"/>
                     <input class="bouton_rechercher" type="button" value="Rechercher">
+                    <span class="logo_recherche"><i class="fas fa-search"></i></span>
                 </form>
                 <div class="div_filtres">
                     <h2 class="h2_filtres">Filtres</h2>
-                    <div class="txt_logo_filtres eco">
-                        <div class="logo_filtres">
-                            <i class="fas fa-money-bill-wave"></i>
+                    <div class="container_filtres">
+                        <div class="txt_logo_filtres eco">
+                            <div class="logo_filtres">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <span class="txt_filtres">Économique</span>
                         </div>
-                        <span class="txt_filtres">Économique</span>
-                    </div>
-                    <div class="txt_logo_filtres fam">
-                        <div class="logo_filtres">
-                            <i class="fas fa-child"></i>
+                        <div class="txt_logo_filtres fam">
+                            <div class="logo_filtres">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <span class="txt_filtres">Familial</span>
                         </div>
-                        <span class="txt_filtres">Familial</span>
-                    </div>
-                    <div class="txt_logo_filtres rom">
-                        <div class="logo_filtres">
-                            <i class="fas fa-heart"></i>
+                        <div class="txt_logo_filtres rom">
+                            <div class="logo_filtres">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <span class="txt_filtres">Romantique</span>
                         </div>
-                        <span class="txt_filtres">Romantique</span>
-                    </div>
-                    <div class="txt_logo_filtres ani">
-                        <div class="logo_filtres">
-                            <i class="fas fa-dog"></i>
+                        <div class="txt_logo_filtres ani">
+                            <div class="logo_filtres">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <span class="txt_filtres">Animaux autorisés</span>
                         </div>
-                        <span class="txt_filtres">Animaux autorisés</span>
                     </div>
                 </div>
                 <p class="p_i_info"><span class="logo_info"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
@@ -183,56 +188,56 @@
                     <div class="populaires_container">                  
                         <article class="populaires_articles">
                             <a href="#">
-                                <figure class="populaires_figures">
+                                <div class="populaires_div_img">
                                     <img class="populaires_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre verte" />
-                                    <figcaption class="populaires_fc">
-                                        <h3>Hôtel Le soleil du matin</h3>
-                                        <p>Nuit à partir de <strong>126€</strong></p>
-                                        <div class="stars_2">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </figcaption>
-                                </figure>
+                                </div>   
+                                <div class="populaires_div_txt">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <strong>126€</strong></p>
+                                    <div class="stars_2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>    
+                                </div>
                             </a> 
                         </article>                   
                         <article class="populaires_articles">
                             <a href="#">
-                                <figure class="populaires_figures">
+                                <div class="populaires_div_img">
                                     <img class="populaires_img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre moderne avec lit double" />
-                                    <figcaption class="populaires_fc">
-                                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                        <p>Nuit à partir de <strong>71€</strong></p>
-                                        <div class="stars_2">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star vide"></i>
-                                        </div>
-                                    </figcaption>
-                                </figure>
+                                </div>
+                                <div class="populaires_div_txt">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                    <div class="stars_2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star vide"></i>
+                                    </div>
+                                </div>
                             </a>
                         </article>
                         <article class="populaires_articles">
                             <a href="#">
-                                <figure class="populaires_figures">
+                                <div class="populaires_div_img">
                                     <img class="populaires_img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre lit double avec table de nuit en bois" />
-                                    <figcaption class="populaires_fc">
-                                        <h3>Hôtel Tout en bleu et Blanc</h3>
-                                        <p>Nuit à partir de <strong>68€</strong></p>
-                                        <div class="stars_2">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star vide"></i>
-                                        </div>
-                                    </figcaption>
-                                </figure>
+                                </div>
+                                <div class="populaires_div_txt">
+                                    <h3>Hôtel Tout en bleu et Blanc</h3>
+                                    <p>Nuit à partir de <strong>68€</strong></p>
+                                    <div class="stars_2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star vide"></i>
+                                    </div>
+                                </div>
                             </a>
                         </article>
                     </div>
