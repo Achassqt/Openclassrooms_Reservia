@@ -18,6 +18,7 @@ a
     text-decoration: none;
 }
 
+/*header*/
 header
 {
     display: flex;
@@ -128,6 +129,7 @@ nav a:hover
 
 }
 
+/*section1*/
 h1
 {
     font-size: 1.5em;
@@ -357,6 +359,7 @@ label
     color: #0065FC;
 }
 
+/*hebergements/populaires*/
 .hebergements_populaires
 {
    display: flex;
@@ -692,6 +695,7 @@ label
     }
 }
 
+/*activites*/
 .activites
 {
     display: flex;
@@ -999,6 +1003,7 @@ label
     }
 }
 
+/*footer*/
 .footer 
 {
     min-height: 100%;
